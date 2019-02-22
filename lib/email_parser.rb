@@ -7,16 +7,17 @@ require "pry"
 class EmailParser
   def initialize(emails)
     @emails = emails
-    
-    @new_emails_list = []
   end 
 
   def parse
     split_emails = @emails.split(" ")
-    split_emails.each do |email|
-      if 
+    formatted_emails = split_emails.collect do |email|
+      if email.end_with?(",")
+        email.chomp(-1)
+      end 
     end 
     
+    new_emails_list = formatted_emails.uniq
   end 
 
 end 
