@@ -12,11 +12,11 @@ class EmailParser
   end 
 
   def parse
-    if @emails.include?(", ")
-      @emails.split(", ")
-    elsif @emails.include?(" ")
-      @emails.split()
-    end
+    split_emails = @emails.split(" ")
+    split_emails.each do |email|
+      if 
+    end 
+    
   end 
 
 end 
