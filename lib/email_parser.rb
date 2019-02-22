@@ -14,6 +14,8 @@ class EmailParser
     formatted_emails = split_emails.collect do |email|
       if email.end_with?(",")
         email.chomp(",")
+      else 
+        email 
       end 
     end 
     
