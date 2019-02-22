@@ -13,7 +13,7 @@ class EmailParser
 
   def parse
     if @emails.include?(",")
-    true 
+    puts ","
   end 
 
 end 
