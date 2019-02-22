@@ -13,6 +13,7 @@ class EmailParser
 
   def parse
     if @emails.include?(",")
+      @emails.compact
     end
   end 
 
