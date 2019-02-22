@@ -12,16 +12,8 @@ class EmailParser
   end 
 
   def parse
-    if @emails.include? ","
-      emails_split = @emails.split(", ")
-      emails_split.each do |email|
-        if !emails_split.include?(email) 
-          @new_emails_list << email 
-        end 
-      end
-    elsif @emails.include?(" ")
-    end
-    @new_emails_list
+    if @emails.include?(",")
+    true 
   end 
 
 end 
