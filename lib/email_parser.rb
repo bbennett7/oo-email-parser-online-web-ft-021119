@@ -9,12 +9,6 @@ class EmailParser
     @emails = emails 
   end 
 
-def parse(new_emails)
-  new_email_list = []
-  
-  if new_emails.includes?(", ")
-    new_email_list
-  elsif new_emails.includes?(" ")
+#def parse(new_emails)
 
-  end
-end 
+#end 
