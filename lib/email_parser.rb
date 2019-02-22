@@ -13,6 +13,7 @@ class EmailParser
 
   def parse
     if @emails.include?(",")
+      binding.pry
       puts ","
     end
   end 
