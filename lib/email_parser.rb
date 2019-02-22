@@ -12,8 +12,10 @@ class EmailParser
   end 
 
   def parse
-    if @emails.include?(",")
-      @emails.compact
+    if @emails.include?(", ")
+      @emails.split(", ")
+    elsif @emails.include?(" ")
+      @emails.split()
     end
   end 
 
