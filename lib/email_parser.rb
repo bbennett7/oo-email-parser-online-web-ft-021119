@@ -11,4 +11,4 @@ class EmailParser
 
 #def parse(new_emails)
 
-#end 
+end 
