@@ -13,7 +13,7 @@ class EmailParser
     split_emails = @emails.split(" ")
     formatted_emails = split_emails.collect do |email|
       if email.end_with?(",")
-        email.chomp(-1)
+        email.chomp(",")
       end 
     end 
     
